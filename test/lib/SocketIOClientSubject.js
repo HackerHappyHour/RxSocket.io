@@ -1,5 +1,4 @@
-require("babel-register");
-var {SocketIOClientSubject} = require('../../lib/SocketIOClientSubject');
+import {SocketIOClientSubject} from '../../lib/SocketIOClientSubject';
 
 var config = {
   url: 'http://localhost:3031'

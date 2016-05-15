@@ -1,6 +1,12 @@
-import {SocketIOClientSubject} from '../../lib/SocketIOClientSubject';
+import {WebSocketClient} from '../../lib/SocketIOClientSubject';
+import {Subject} from 'rxjs/Subject';
 
-var config = {
-  url: 'http://localhost:3031'
-}
-new SocketIOClientSubject(config);
+var url = 'http://localhost:3031';
+var openObserver = new Subject();
+var source = new WebSocketClient(url, openObserver);
+
+source.subscribe(function(x){
+  console.log("x: ", x);
+})
+
+source.next();

@@ -34,3 +34,6 @@ node_modules
 
 # dist directory
 dist
+
+
+*/test.file.txt

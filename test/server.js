@@ -5,7 +5,7 @@ var fs = require('fs');
 var path = require('path');
 
 io.on('connection', function(socket){
-  socket.io.on('packet', function(packet){
+  io.on('packet', function(packet){
     console.log('packet: ', packet);
   });
   console.log('a client connected');

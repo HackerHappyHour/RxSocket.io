@@ -1,4 +1,4 @@
-import {WebSocketClient} from '../../lib/WebSocketClient';
+import {WebSocketClient} from 'rx-socket-io/WebSocketClient';
 import fs from 'fs';
 
 var url = 'http://localhost:3031';

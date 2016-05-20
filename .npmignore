@@ -4,3 +4,4 @@ test
 .eslintrc.js
 webpack*
 .babelrc
+.gitignore

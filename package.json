@@ -1,5 +1,5 @@
 {
-  "name": "rxsocket.io",
+  "name": "rxs.io",
   "version": "1.0.0",
   "description": "RxJS operators for socket.io",
   "main": "dist/RxSocketIO.js",

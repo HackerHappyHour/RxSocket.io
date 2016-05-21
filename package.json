@@ -39,7 +39,7 @@
   "eslintConfig": {
     "extends": "@h3/eslint-config"
   },
-  "engines":{
+  "engines": {
     "node": ">=4.0.0"
   },
   "devDependencies": {
@@ -52,8 +52,7 @@
     "eslint": "^2.9.0",
     "express": "^4.13.4",
     "faucet": "0.0.1",
-    "tape": "^4.5.1",
-    "webpack": "^1.13.0"
+    "tape": "^4.5.1"
   },
   "dependencies": {
     "rxjs": "^5.0.0-beta.7",

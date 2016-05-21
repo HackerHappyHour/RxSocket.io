@@ -2,8 +2,6 @@ require('babel-register');
 var app = require('express')();
 var http = require('http').Server(app);
 var WebSocketServer = require('../lib/WebSocketServer').WebSocketServer;
-var fs = require('fs');
-var path = require('path');
 
 var socketServer = new WebSocketServer(http);
 socketServer.subscribe(function(connection){

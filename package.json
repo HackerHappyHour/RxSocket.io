@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel lib -d dist",
     "lint": "eslint --ignore-path .gitignore . --ext .js",
+    "pretest": "npm run lint",
     "test": "tape"
   },
   "repository": {

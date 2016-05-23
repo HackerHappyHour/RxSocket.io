@@ -1,13 +1,13 @@
-require('babel-register');
 var app = require('express')();
 var http = require('http').Server(app);
-var WebSocketServer = require('../lib/WebSocketServer').WebSocketServer;
+var io = require('socket.io')(http);
 
-var socketServer = new WebSocketServer(http);
-socketServer.subscribe(function(connection){
-    socketServer.next('testing');
+io.on('connection', function(socket){
+  socket.on('thing', function(data){
+    console.log("thing received", data);
+  });
+  socket.emit('testing', {data: 'server data'})
 });
-
 
 http.listen('3031', function(){
   console.log('listening on :3031');

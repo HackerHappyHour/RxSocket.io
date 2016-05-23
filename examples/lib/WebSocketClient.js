@@ -1,11 +1,8 @@
-import {WebSocketClient} from 'rx-socket-io/WebSocketClient';
-import fs from 'fs';
+import {WebSocketClient} from '../../lib/WebSocketClient';
 
 var url = 'http://localhost:3031';
 var source = WebSocketClient(url);
 source.next({name: 'thing', data: "stuff"});
-var testFile = fs.createWriteStream('test.file.txt');
 source.subscribe(function(x){
   console.log("x:", x);
-  testFile.write(x.data);
 })

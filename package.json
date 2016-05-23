@@ -1,6 +1,6 @@
 {
   "name": "rxs.io",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "RxJS operators for socket.io",
   "main": "dist/RxSocketIO.js",
   "scripts": {
